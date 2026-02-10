@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits - Choroma Logistic</title>
+    <meta name="description" content="Catalogue de nos produits disponibles">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Style pour le bouton de téléchargement PDF */
+        .pdf-container {
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        
+        .pdf-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #1a365d, #2d3748);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 30px;
+        }
+        
+        .pdf-button:hover {
+            background: linear-gradient(135deg, #2d3748, #4a5568);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .pdf-button i {
+            font-size: 1.2em;
+        }
+        
+        /* Styles pour la galerie d'images PDF */
+        .pdf-images-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        .pdf-page {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 40px;
+        }
+        
+        .pdf-page:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .page-number {
+            text-align: center;
+            color: #718096;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        
+        .pdf-image {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            display: block;
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        /* Note d'information */
+        .pdf-note {
+            background: #f7fafc;
+            border-left: 4px solid #4299e1;
+            padding: 15px 20px;
+            margin: 30px auto;
+            max-width: 800px;
+            border-radius: 4px;
+            font-size: 0.95em;
+            color: #4a5568;
+        }
+        
+        .pdf-note i {
+            color: #4299e1;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.jpg" alt="Choroma Logistic">
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="produits.html" class="nav-link active">Produits</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="about.html" class="nav-link">À propos</a></li>
+                </ul>
+                
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Nos Produits</h1>
+            <p class="hero-subtitle">
+                Découvrez notre sélection de produits de qualité disponibles à l'import et à l'export
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Catalogue des Produits</h2>
+            <p class="section-subtitle">
+                Consultez notre catalogue complet pour découvrir tous nos produits
+            </p>
+            
+            <!-- Bouton de téléchargement -->
+            <div class="pdf-container">
+                <a href="assets/pdf/catalogue-complet-2024.pdf" class="pdf-button" download>
+                    <i class="fas fa-download"></i>
+                    Télécharger le catalogue PDF complet
+                </a>
+            </div>
+            
+            <!-- Note d'information -->
+            <div class="pdf-note">
+                <i class="fas fa-info-circle"></i>
+                Vous pouvez visualiser ci-dessous notre catalogue produit sous forme d'images. Pour une meilleure expérience, téléchargez le PDF complet.
+            </div>
+            
+            <!-- Galerie d'images PDF (remplacez ces chemins par vos images réelles) -->
+            <div class="pdf-images-container">
+                <!-- Page 1 du catalogue -->
+                <div class="pdf-page">
+                    <img src="assets/images/catalogue-page1.jpg" alt="Page 1 du catalogue" class="pdf-image">
+                    <div class="page-number">Page 1 - Présentation</div>
+                </div>
+                
+                <!-- Page 2 du catalogue -->
+                <div class="pdf-page">
+                    <img src="assets/images/catalogue-page2.jpg" alt="Page 2 du catalogue" class="pdf-image">
+                    <div class="page-number">Page 2 - Produits Agricoles</div>
+                </div>
+                
+                <!-- Page 3 du catalogue -->
+                <div class="pdf-page">
+                    <img src="assets/images/catalogue-page3.jpg" alt="Page 3 du catalogue" class="pdf-image">
+                    <div class="page-number">Page 3 - Produits Pétroliers</div>
+                </div>
+                
+                <!-- Page 4 du catalogue -->
+                <div class="pdf-page">
+                    <img src="assets/images/catalogue-page4.jpg" alt="Page 4 du catalogue" class="pdf-image">
+                    <div class="page-number">Page 4 - Matériaux de Construction</div>
+                </div>
+                
+                <!-- Page 5 du catalogue -->
+                <div class="pdf-page">
+                    <img src="assets/images/catalogue-page5.jpg" alt="Page 5 du catalogue" class="pdf-image">
+                    <div class="page-number">Page 5 - Biens de Consommation</div>
+                </div>
+                
+                <!-- Page 6 du catalogue -->
+                <div class="pdf-page">
+                    <img src="assets/images/catalogue-page6.jpg" alt="Page 6 du catalogue" class="pdf-image">
+                    <div class="page-number">Page 6 - Spécifications Techniques</div>
+                </div>
+            </div>
+            
+            <!-- Bouton de téléchargement en bas également -->
+            <div class="pdf-container" style="margin-top: 40px;">
+                <a href="produit.pdf" class="pdf-button" download>
+                    <i class="fas fa-download"></i>
+                    Télécharger le PDF complet
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Choroma Logistic</h3>
+                    <p style="color: #cbd5e0; line-height: 1.7;">
+                        Import-export de produits de qualité depuis 2010
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +237 699 999 999</li>
+                        <li><i class="fas fa-envelope"></i> contact@choroma.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Douala, Cameroun</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Choroma Logistic. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Choroma Logistic</title>
+    <meta name="description" content="Contactez-nous pour vos besoins en transport et commerce">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.jpg" alt="Choroma Logistic">
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="produits.html" class="nav-link">Produits</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="about.html" class="nav-link">À propos</a></li>
+                </ul>
+                
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Contactez-nous</h1>
+            <p class="hero-subtitle">
+                Nous sommes à votre écoute pour répondre à toutes vos questions
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="card-grid">
+                <!-- Coordonnées -->
+                <div class="card">
+                    <h3 class="card-title">Nos Coordonnées</h3>
+                    <div style="text-align: left; margin-top: 20px;">
+                        <p style="margin-bottom: 15px;">
+                            <i class="fas fa-map-marker-alt" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                            <strong>Adresse :</strong> Rue des Entrepreneurs, Douala, Cameroun
+                        </p>
+                        
+                        <p style="margin-bottom: 15px;">
+                            <i class="fas fa-phone" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                            <strong>Téléphone :</strong> +237 699 999 999
+                        </p>
+                        
+                        <p style="margin-bottom: 15px;">
+                            <i class="fas fa-envelope" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                            <strong>Email :</strong> contact@choroma.com
+                        </p>
+                        
+                        <p style="margin-bottom: 15px;">
+                            <i class="fas fa-clock" style="color: var(--secondary-color); margin-right: 10px;"></i>
+                            <strong>Horaires :</strong> Lundi - Vendredi, 8h - 18h
+                        </p>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                        <h4 style="color: var(--primary-color); margin-bottom: 15px;">Bureaux régionaux</h4>
+                        <p style="color: var(--text-light);">
+                            • Yaoundé : +237 699 888 888<br>
+                            • Garoua : +237 699 777 777<br>
+                            • N'Djaména : +235 699 666 666
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Formulaire -->
+                <div class="card">
+                    <h3 class="card-title">Envoyez-nous un message</h3>
+                    
+                    <form class="contact-form" style="margin-top: 20px;">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Sujet *</label>
+                            <select id="subject" name="subject" class="form-control" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="transport">Transport & Transit</option>
+                                <option value="negoce">Négoce International</option>
+                                <option value="douane">Services Douaniers</option>
+                                <option value="produits">Produits</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background-color: var(--bg-light);">
+        <div class="container">
+            <h2 class="section-title">Autres moyens de contact</h2>
+            
+            <div class="card-grid">
+                <div class="card" style="text-align: center;">
+                    <div class="card-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="card-title">WhatsApp</h3>
+                    <p class="card-text">
+                        Réponse rapide via WhatsApp
+                    </p>
+                    <a href="https://wa.me/23560188338?text=Bonjour%2C%20je%20suis%20intéressé%20par%20vos%20services" class="btn btn-primary" style="margin-top: 15px;">
+                        <i class="fab fa-whatsapp"></i> Chat WhatsApp
+                    </a>
+                </div>
+                
+                <div class="card" style="text-align: center;">
+                    <div class="card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="card-title">Téléphone</h3>
+                    <p class="card-text">
+                        Appelez-nous directement
+                    </p>
+                    <a href="tel:+237699999999" class="btn btn-secondary" style="margin-top: 15px;">
+                        <i class="fas fa-phone"></i> Appeler maintenant
+                    </a>
+                </div>
+                
+                <div class="card" style="text-align: center;">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="card-title">Email direct</h3>
+                    <p class="card-text">
+                        Envoyez-nous un email
+                    </p>
+                    <a href="mailto:contact@choroma.com" class="btn btn-primary" style="margin-top: 15px;">
+                        <i class="fas fa-envelope"></i> Envoyer un email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Choroma Logistic</h3>
+                    <p style="color: #cbd5e0; line-height: 1.7;">
+                       Votre partenaire de confiance pour le transport, Import-Export et le commerce entre le Cameroun et partout au Tchad.
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Pages</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="produits.html">Produits</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +235 62 12 33 33</li>
+                        <li><i class="fas fa-phone"></i> +237 686 27 86 72</li>
+                        <li><i class="fas fa-phone"></i> +237 650 70 35 35</li>
+                        <li><i class="fas fa-envelope"></i> choromalogistique@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> N'djamena-Tchad: avenue brahim abatcha (40 bord)</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Douala-Cameroun monté manga bell</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Choroma Logistic. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

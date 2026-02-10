@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits - Choroma Logistic</title>
+    <meta name="description" content="Catalogue de nos produits disponibles">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/logo.jpg" alt="Choroma Logistic">
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="produits.html" class="nav-link active">Produits</a></li>
+                    <li><a href="galerie.html" class="nav-link">Galerie</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="about.html" class="nav-link">À propos</a></li>
+                </ul>
+                
+                <button class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Nos Produits</h1>
+            <p class="hero-subtitle">
+                Découvrez notre sélection de produits de qualité disponibles à l'import et à l'export
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Catalogue des Produits</h2>
+            <p class="section-subtitle">
+                Produits disponibles avec fiches techniques téléchargeables
+            </p>
+            
+            <!-- Centrer le produit unique -->
+            <div style="display: flex; justify-content: center; margin: 40px 0;">
+                <div class="product-card" style="max-width: 400px; width: 100%;">
+                    <div class="product-image">
+                        <img src="logo.jpg" alt="Produits Agricoles">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Produits Agricoles</h3>
+                        <p class="product-description">
+                            Riz, maïs, haricots, arachides et autres produits agricoles 
+                            du Cameroun et du Tchad.
+                        </p>
+                        <a href="produit.pdf" class="btn-download" download>
+                            <i class="fas fa-file-pdf"></i> Télécharger la fiche
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Choroma Logistic</h3>
+                    <p style="color: #cbd5e0; line-height: 1.7;">
+                        Import-export de produits de qualité depuis 2010
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Catégories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#agricole">Produits Agricoles</a></li>
+                        <li><a href="#petrolier">Produits Pétroliers</a></li>
+                        <li><a href="#construction">Matériaux Construction</a></li>
+                        <li><a href="#consommation">Biens de Consommation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +235 62 12 33 33</li>
+                        <li><i class="fas fa-phone"></i> +237 686 27 86 72</li>
+                        <li><i class="fas fa-phone"></i> +237 650 70 35 35</li>
+                        <li><i class="fas fa-envelope"></i> choromalogistique@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> N'djamena-Tchad: avenue brahim abatcha (40 bord)</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Douala-Cameroun monté manga bell</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Choroma Logistic. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
